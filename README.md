@@ -1,35 +1,56 @@
-# 会社Webサイト（GitHub Pages）
+# 合同会社Corn - 公式Webサイト
 
-Apple Developer登録用の会社公式Webサイトです。
+物理教育YouTubeチャンネル「たのしいぶつり」を運営する合同会社Cornの公式Webサイトです。
+Apple Developer登録用として作成しています。
 
-## 🚀 セットアップ手順
+## 🌐 サイトURL
 
-### 1. GitHubリポジトリの作成
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/yourusername/your-repo-name.git
-git push -u origin main
+- **カスタムドメイン**: https://cornph.jp
+- **GitHub Pages**: https://junko1050.github.io/company-website/
+
+## 📋 サイト概要
+
+高校生向けの物理教育YouTubeチャンネル「たのしいぶつり」の紹介と、合同会社Cornの企業情報を掲載しています。
+
+### 主なセクション
+- **ヒーローセクション**: サービス紹介とYouTubeリンク
+- **YouTubeチャンネル**: チャンネルの特徴（わかりやすい解説、高校生向けコンテンツ、楽しく学べる）
+- **私の想い**: 物理教育への想いを記載
+- **会社概要**: 日英バイリンガルでの企業情報（Apple Developer審査対応）
+
+## 🛠️ 技術スタック
+
+- **HTML5 / CSS3**: シンプルな静的サイト
+- **GitHub Pages**: ホスティング
+- **お名前.com**: カスタムドメイン管理
+
+## 📁 ファイル構成
+
+```
+cornwebsite/
+├── index.html          # メインHTMLファイル
+├── styles.css          # スタイルシート
+├── kv-image.jpeg       # キービジュアル画像
+├── logo.png            # ファビコン
+├── CNAME               # カスタムドメイン設定
+└── README.md           # このファイル
 ```
 
-### 2. GitHub Pagesの有効化
-1. GitHubリポジトリの **Settings** タブを開く
-2. 左メニューから **Pages** を選択
-3. **Source** を `main` ブランチに設定
-4. **Save** をクリック
+## 🚀 デプロイ方法
 
-### 3. カスタムドメインの設定（お名前.com）
+### 変更をプッシュ
+```bash
+git add .
+git commit -m "Update content"
+git push
+```
 
-#### GitHub側の設定
-1. GitHub Pages設定画面で **Custom domain** に独自ドメインを入力
-2. `CNAME` ファイルにドメイン名が記載されていることを確認
+GitHub Pagesが自動的にデプロイします（数分かかる場合があります）。
 
-#### お名前.com側のDNS設定
-お名前.comの管理画面で以下のDNSレコードを追加：
+## 🔧 DNS設定（お名前.com）
 
-**Aレコード（@）:**
+### Aレコード設定
+ホスト名: `@`
 ```
 185.199.108.153
 185.199.109.153
@@ -37,27 +58,29 @@ git push -u origin main
 185.199.111.153
 ```
 
-**または CNAMEレコード（www）:**
-```
-yourusername.github.io
-```
-
-### 4. SSL/HTTPS の有効化
-GitHub Pagesの設定で「Enforce HTTPS」にチェックを入れる（DNS設定が反映されてから）
+### CNAME設定（オプション）
+ホスト名: `www`  
+値: `junko1050.github.io`
 
 ## 📝 カスタマイズ方法
 
 ### 会社情報の編集
-[index.html](index.html) を開いて以下の項目を更新：
-- 会社名
-- 設立年月
-- 代表者名
-- 所在地
-- 資本金
-- 事業内容
-- お問い合わせ先（メール・電話）
+[index.html](index.html) の「会社概要」セクションを編集してください。
 
-### ドメイン名の設定
+### YouTubeリンクの変更
+`https://www.youtube.com/@tanoshi-butsuri` の部分を検索して置換してください。
+
+### デザインの変更
+[styles.css](styles.css) でカラーやレイアウトを調整できます。
+
+## 📞 お問い合わせ
+
+- **Email**: info@cornph.jp
+- **営業時間**: 平日 9:00-18:00 (JST)
+
+## 📄 ライセンス
+
+© 2026 合同会社Corn (Corn LLC). All rights reserved.
 [CNAME](CNAME) ファイルを編集して、取得したドメイン名に変更：
 ```
 example.com
