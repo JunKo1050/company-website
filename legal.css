@@ -1,0 +1,113 @@
+/* 法的文書ページ共通スタイル */
+.legal-header {
+    background: linear-gradient(to bottom, #e8eef5 0%, #f0f4f8 100%);
+    padding: 3rem 0 2rem;
+}
+
+.legal-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.legal-header .last-updated {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.back-link {
+    display: inline-block;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #1d4ed8;
+}
+
+.legal-content {
+    background: white;
+    padding: 3rem 0 5rem;
+}
+
+.legal-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-body h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.legal-body h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-body h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-body p {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.legal-body ul,
+.legal-body ol {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.legal-body li {
+    margin-bottom: 0.25rem;
+}
+
+.legal-body a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.legal-body a:hover {
+    text-decoration: underline;
+}
+
+.legal-body strong {
+    color: #1a202c;
+}
+
+@media (max-width: 768px) {
+    .legal-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .legal-body h2 {
+        font-size: 1.25rem;
+    }
+
+    .legal-content {
+        padding: 2rem 0 3rem;
+    }
+}
