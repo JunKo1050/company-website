@@ -1,0 +1,293 @@
+/* Sophica アプリ紹介ページ */
+
+.back-link {
+    display: inline-block;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #1d4ed8;
+}
+
+/* ヒーロー */
+.app-hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    padding: 3rem 0 4rem;
+    color: white;
+}
+
+.app-hero .back-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.app-hero .back-link:hover {
+    color: white;
+}
+
+.app-hero-content {
+    max-width: 700px;
+}
+
+.app-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.app-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.app-description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+
+.app-hero .btn-primary {
+    background: white;
+    color: #2563eb;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.app-hero .btn-primary:hover {
+    background: #f0f4ff;
+    transform: translateY(-2px);
+}
+
+/* セクション */
+.app-section {
+    padding: 4rem 0;
+}
+
+.app-section.white {
+    background: white;
+}
+
+.app-section.gray {
+    background: #f8f9fa;
+}
+
+.app-section h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+}
+
+.section-lead {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* コンテンツブロック */
+.content-block {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-block p {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 1.25rem;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    padding: 0.5rem 0 0.5rem 1.75rem;
+    position: relative;
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* モード比較 */
+.mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mode-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.app-section.gray .mode-card {
+    background: white;
+}
+
+.mode-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.mode-card ol,
+.mode-card ul {
+    padding-left: 1.25rem;
+    color: #374151;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.mode-card li {
+    margin-bottom: 0.25rem;
+}
+
+/* 料金テーブル */
+.pricing {
+    text-align: center;
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: #1a202c !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.pricing-note {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #6b7280;
+}
+
+.plan-table {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.plan-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.plan-table th,
+.plan-table td {
+    padding: 1rem 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+}
+
+.plan-table th {
+    background: #f0f4f8;
+    font-weight: 600;
+    color: #374151;
+}
+
+.plan-table th:first-child,
+.plan-table td:first-child {
+    text-align: left;
+}
+
+.plan-table td.check {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.plan-table tr:last-child td {
+    border-bottom: none;
+}
+
+.note {
+    text-align: center;
+    font-size: 0.85rem !important;
+    color: #6b7280 !important;
+}
+
+/* CTA */
+.app-cta {
+    text-align: center;
+    padding: 4rem 0 3rem;
+}
+
+.app-cta h2 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #2563eb, #0891b2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.cta-text {
+    color: #4b5563;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.legal-links {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.legal-links a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.legal-links span {
+    margin: 0 0.75rem;
+    color: #d1d5db;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2.5rem;
+    }
+
+    .app-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .mode-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        font-size: 1.25rem !important;
+    }
+}
