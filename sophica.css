@@ -291,3 +291,96 @@
         font-size: 1.25rem !important;
     }
 }
+
+/* 分野別カード枚数 */
+.topic-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+}
+
+.topic-stat {
+    background: #f8f9fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    min-width: 110px;
+    text-align: center;
+}
+
+.app-section.gray .topic-stat {
+    background: white;
+}
+
+.topic-count {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2563eb;
+    line-height: 1.1;
+}
+
+.topic-name {
+    display: block;
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 0.35rem;
+}
+
+/* サポート */
+.support-list {
+    max-width: 520px;
+    margin: 1.5rem auto 0;
+}
+
+.support-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.support-row:last-child {
+    border-bottom: none;
+}
+
+.support-list dt {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+.support-list dd {
+    margin: 0;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.support-list a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.support-list a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .topic-stat {
+        min-width: 90px;
+        padding: 1rem 1.1rem;
+    }
+
+    .topic-count {
+        font-size: 1.6rem;
+    }
+
+    .support-row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+}
