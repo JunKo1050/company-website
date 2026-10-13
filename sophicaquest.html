@@ -3,104 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SophicaQuest（ソフィカクエスト）は、英単語を答えて冒険するRPG。中学・高校の単語帳で、1日30分ずつ楽しく覚えられます。">
+    <meta name="description" content="SophicaQuest（ソフィカクエスト）は、英単語を答えて冒険するRPG。中学・高校の単語帳で、1日30分ずつ楽しく覚えられます。無料・広告なし。">
+    <meta name="theme-color" content="#070f24">
+    <meta name="apple-itunes-app" content="app-id=6820406891">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cornph.jp/sophicaquest">
+    <meta property="og:title" content="SophicaQuest — 英単語で冒険するRPG">
+    <meta property="og:description" content="英単語の意味を答えて仲間と戦い、六つの星を集める冒険RPG。中学・高校の単語帳で遊べます。無料・広告なし。">
+    <meta property="og:image" content="https://cornph.jp/assets/sophicaquest/ogp.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <title>SophicaQuest — 英単語で冒険するRPG | 合同会社Corn</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="sophica.css">
+    <link rel="stylesheet" href="sophicaquest.css?v=20261013b">
 </head>
-<body>
+<body class="sq">
     <main>
         <!-- ヒーロー -->
-        <section class="app-hero">
+        <section class="sq-hero">
             <div class="container">
-                <a href="/" class="back-link">&larr; トップページに戻る</a>
-                <div class="app-hero-content">
-                    <h1 class="app-title">SophicaQuest</h1>
-                    <p class="app-subtitle">英単語で冒険するRPG</p>
-                    <p class="app-description">SophicaQuest（ソフィカクエスト）は、英単語の意味を答えて仲間と戦い、六つの星を集める冒険RPG。YouTubeチャンネル「たのしいぶつり」の元高校教師がつくりました。遊んでいるうちに、中学・高校の英単語と熟語が身につきます。</p>
-                    <a href="https://apps.apple.com/jp/app/id6820406891" target="_blank" rel="noopener">
-                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード" width="250" height="83" style="display:block;margin:24px auto 8px;">
-                    </a>
-                    <p style="text-align:center;font-size:0.9em;color:rgba(255,255,255,0.85);">無料・iPhoneのみ対応</p>
+                <a href="/" class="sq-back">&larr; トップページに戻る</a>
+                <div class="sq-hero-grid">
+                    <div class="sq-hero-text">
+                        <div class="sq-brand">
+                            <img src="assets/sophicaquest/app-icon.webp" alt="" width="56" height="56">
+                            <div>
+                                <p class="sq-brand-name">SophicaQuest</p>
+                                <p class="sq-brand-kana">ソフィカクエスト</p>
+                            </div>
+                        </div>
+                        <p class="sq-eyebrow">英単語 × 冒険RPG</p>
+                        <h1><span class="sq-line">単語帳が苦手でも、</span><br><span class="sq-line sq-accent">冒険なら。</span></h1>
+                        <p class="sq-lead">英単語の意味を答えて仲間と戦い、六つの星を集める冒険RPG。遊んでいるうちに、中学・高校の英単語と熟語が身につきます。</p>
+                        <div class="sq-get">
+                            <a class="sq-badge" href="https://apps.apple.com/jp/app/id6820406891" target="_blank" rel="noopener">
+                                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード" width="180" height="60">
+                            </a>
+                            <ul class="sq-chips">
+                                <li>無料</li>
+                                <li>広告なし</li>
+                                <li>iPhone向け</li>
+                            </ul>
+                        </div>
+                        <p class="sq-search">App Storeで「<strong>SophicaQuest</strong>」と検索しても見つかります。</p>
+                    </div>
+                    <div class="sq-hero-art">
+                        <img src="assets/sophicaquest/title-art.webp" alt="SophicaQuest 〜六つの星〜 のタイトル画面。六つの星を見上げる4人の仲間" width="900" height="900">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ゲームの画面 -->
+        <section class="sq-section" id="screens">
+            <div class="container">
+                <h2>ゲームの画面</h2>
+                <p class="sq-section-lead">英単語を答えるたびに、冒険が進みます。</p>
+                <ul class="sq-screens">
+                    <li>
+                        <figure>
+                            <div class="sq-phone"><img src="assets/sophicaquest/screen-01-battle.webp" alt="戦闘の画面。英単語 information の意味を4つの中から選ぶ" width="640" height="1251" loading="lazy" decoding="async"></div>
+                            <figcaption><strong>英単語が、冒険の力に。</strong><span>意味を選んで、仲間とバトル。</span></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="sq-phone"><img src="assets/sophicaquest/screen-02-lake-town.webp" alt="水鏡の街を仲間と歩く画面" width="640" height="1251" loading="lazy" decoding="async"></div>
+                            <figcaption><strong>仲間と歩こう。六つの世界を。</strong><span>街の人との出会いが、物語をつなぐ。</span></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="sq-phone"><img src="assets/sophicaquest/screen-03-clue.webp" alt="琥珀鉱山で手がかりの記録を読む画面" width="640" height="1251" loading="lazy" decoding="async"></div>
+                            <figcaption><strong>見つけた言葉が、道をひらく。</strong><span>会話や記録を頼りに、謎を解こう。</span></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="sq-phone"><img src="assets/sophicaquest/screen-04-growth.webp" alt="レベルアップの画面。新しい技を覚える" width="640" height="1251" loading="lazy" decoding="async"></div>
+                            <figcaption><strong>覚えたことが、強さになる。</strong><span>英単語も熟語も、冒険の中で。</span></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="sq-phone"><img src="assets/sophicaquest/screen-05-garden.webp" alt="虹の庭の大温室で仕掛けを動かす画面" width="640" height="1251" loading="lazy" decoding="async"></div>
+                            <figcaption><strong>光と水で、眠る庭を起こす。</strong><span>仕掛けを動かすと、景色も変わる。</span></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="sq-phone"><img src="assets/sophicaquest/screen-06-snow-tower.webp" alt="雪の塔の中を進む画面" width="640" height="1251" loading="lazy" decoding="async"></div>
+                            <figcaption><strong>旅の出会いが、最後の力に。</strong><span>六つの星をめぐる冒険へ。</span></figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- つくったわけ -->
+        <section class="sq-section alt" id="story">
+            <div class="container">
+                <div class="sq-story">
+                    <h2><span class="sq-line">うちの子どもたちのために、</span><span class="sq-line">作りました</span></h2>
+                    <p>うちの息子と娘は、単語帳を覚える作業がどうしても苦手でした。というより、好きではありませんでした。「ゲームなら続けられるかもしれない」と思って作ったのが、このSophicaQuestです。</p>
+                    <p>もともとはわが家のために作ったものですが、同じように単語帳が苦手な人にも遊んでもらえたらと思い、公開しました。お裾分けです。</p>
+                    <p class="sq-sign"><span class="sq-line">高校物理のYouTubeチャンネル</span><span class="sq-line">「たのしいぶつり」</span><br>元高校教師</p>
                 </div>
             </div>
         </section>
 
         <!-- 単語帳 -->
-        <section class="app-section white">
+        <section class="sq-section" id="books">
             <div class="container">
-                <h2>中学・高校の単語帳で遊べる</h2>
-                <p class="section-lead">冒険を始めるときに、自分に合った単語帳を選べます。</p>
-                <div class="topic-stats">
-                    <div class="topic-stat">
-                        <span class="topic-count">1,069</span>
-                        <span class="topic-name">中学・初級前編の単語</span>
-                    </div>
-                    <div class="topic-stat">
-                        <span class="topic-count">249</span>
-                        <span class="topic-name">中学・初級前編の熟語</span>
-                    </div>
-                    <div class="topic-stat">
-                        <span class="topic-count">1,006</span>
-                        <span class="topic-name">高校・初級の単語</span>
-                    </div>
-                    <div class="topic-stat">
-                        <span class="topic-count">240</span>
-                        <span class="topic-name">高校・初級の熟語</span>
-                    </div>
+                <h2>選べる単語帳</h2>
+                <p class="sq-section-lead">冒険を始めるときに、自分に合った単語帳を選びます。どちらも無料です。</p>
+                <div class="sq-books">
+                    <article class="sq-book">
+                        <span class="sq-book-tag">中学</span>
+                        <h3>中学・初級前編</h3>
+                        <p class="sq-book-level">小学校で習う単語から、中2の前半くらいまで</p>
+                        <div class="sq-counts">
+                            <div class="sq-count"><b>1,069</b><span>単語</span></div>
+                            <div class="sq-count"><b>249</b><span>熟語</span></div>
+                        </div>
+                        <dl class="sq-examples">
+                            <dt>最初のステージ</dt>
+                            <dd><span class="sq-word" lang="en">have</span><span class="sq-word" lang="en">like</span><span class="sq-word" lang="en">good</span></dd>
+                            <dt>後半のステージ</dt>
+                            <dd><span class="sq-word" lang="en">information</span><span class="sq-word" lang="en">health</span></dd>
+                        </dl>
+                    </article>
+                    <article class="sq-book high">
+                        <span class="sq-book-tag">高校</span>
+                        <h3>高校・初級</h3>
+                        <p class="sq-book-level">高校に入って最初に固めたい単語</p>
+                        <div class="sq-counts">
+                            <div class="sq-count"><b>1,006</b><span>単語</span></div>
+                            <div class="sq-count"><b>240</b><span>熟語</span></div>
+                        </div>
+                        <dl class="sq-examples">
+                            <dt>最初のステージ</dt>
+                            <dd><span class="sq-word" lang="en">travel</span><span class="sq-word" lang="en">secret</span></dd>
+                            <dt>後半のステージ</dt>
+                            <dd><span class="sq-word" lang="en">policy</span><span class="sq-word" lang="en">despite</span><span class="sq-word" lang="en">insurance</span></dd>
+                        </dl>
+                        <p class="sq-book-note">熟語は高1の基礎レベルです。</p>
+                    </article>
                 </div>
+                <p class="sq-tip">中学の単語に自信がない高校生は、中学のほうから始めるのもおすすめです。冒険データは3つあり、それぞれで単語帳を選べます。</p>
             </div>
         </section>
 
         <!-- 遊び方 -->
-        <section class="app-section gray">
+        <section class="sq-section alt" id="how">
             <div class="container">
                 <h2>答えるほど、強くなる</h2>
-                <div class="content-block">
-                    <p>星灯りの森から雪星の村まで、6つのステージを旅して、仲間と一緒に守り手たちに挑みます。</p>
-                    <p>戦闘では英単語の意味を4つの中から選びます。正解すると仲間全員で攻撃。間違えた単語は、時間をおいて何度も出てくるので、自然に覚えられます。</p>
-                    <p>単語は読み上げで発音も確かめられます。</p>
-                </div>
+                <p class="sq-section-lead">星灯りの森から雪星の村まで、6つのステージを旅します。</p>
+                <ol class="sq-steps">
+                    <li>
+                        <h3>意味を選ぶ</h3>
+                        <p>英単語が出たら、4つの中から意味を選びます。熟語は、英文の空欄に入る語を選びます。</p>
+                    </li>
+                    <li>
+                        <h3>正解すると、仲間と攻撃</h3>
+                        <p>正解すると仲間全員で攻撃。答えるほどレベルが上がり、新しい技や呪文を覚えます。</p>
+                    </li>
+                    <li>
+                        <h3>間違えた単語は、また来る</h3>
+                        <p>間違えた単語は、時間をおいて何度も出てきます。発音は読み上げで確かめられます。</p>
+                    </li>
+                </ol>
             </div>
         </section>
 
         <!-- 続けるための仕組み -->
-        <section class="app-section white">
+        <section class="sq-section" id="daily">
             <div class="container">
                 <h2>毎日、少しずつ</h2>
-                <div class="content-block">
-                    <p><strong>1日30分まで。</strong>遊びすぎないように、その日の冒険は30分で区切りがつきます。会話や戦闘の途中で急に終わることはありません。</p>
-                    <p><strong>冒険データは3つ。</strong>きょうだいで1台のiPhoneを使っても、それぞれの冒険を続けられます。</p>
-                    <p><strong>保護者の方へ。</strong>メニューの保護者欄で、取り組んだ単語の数や定着した数を確認でき、その日の学びを画像で送れます。</p>
-                    <p><strong>機種変更しても続きから。</strong>冒険はご自身のiCloudにも保存されるので、新しいiPhoneやアプリの入れ直しのあとも続けられます。</p>
+                <p class="sq-section-lead">遊びすぎず、続けやすいように作りました。</p>
+                <div class="sq-features">
+                    <article>
+                        <h3>1日30分まで</h3>
+                        <p>その日の冒険は30分で区切りがつきます。会話や戦闘の途中で急に終わることはありません。</p>
+                    </article>
+                    <article>
+                        <h3>冒険データは3つ</h3>
+                        <p>きょうだいで1台のiPhoneを使っても、それぞれの冒険を続けられます。</p>
+                    </article>
+                    <article>
+                        <h3>保護者の方へ</h3>
+                        <p>メニューの保護者欄で、取り組んだ単語の数や定着した数を確認でき、その日の学びを画像で送れます。</p>
+                    </article>
+                    <article>
+                        <h3>機種変更しても続きから</h3>
+                        <p>冒険はご自身のiCloudにも保存されるので、新しいiPhoneやアプリの入れ直しのあとも続けられます。</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- 料金 -->
-        <section class="app-section gray">
+        <section class="sq-section alt" id="price">
             <div class="container">
                 <h2>料金</h2>
-                <div class="content-block">
-                    <p>無料で遊べます。広告はありません。</p>
-                    <p class="note">※今後、続きの単語帳をアプリ内課金で追加する予定です。</p>
+                <div class="sq-box">
+                    <p class="sq-price">無料で遊べます。広告はありません。</p>
+                    <p class="sq-note">※今後、続きの単語帳をアプリ内課金で追加する予定です。</p>
+                    <p class="sq-note">iPhone向けのアプリです（iOS 26以上）。</p>
                 </div>
             </div>
         </section>
 
         <!-- サポート -->
-        <section class="app-section white" id="support">
+        <section class="sq-section" id="support">
             <div class="container">
                 <h2>サポート</h2>
-                <div class="content-block">
+                <div class="sq-box">
                     <p>SophicaQuestに関するご質問・不具合のご報告は、下記までお寄せください。</p>
-                    <dl class="support-list">
-                        <div class="support-row">
+                    <dl class="sq-support">
+                        <div>
                             <dt>メール</dt>
                             <dd><a href="mailto:cornph.infra@gmail.com">cornph.infra@gmail.com</a></dd>
                         </div>
-                        <div class="support-row">
+                        <div>
                             <dt>運営</dt>
                             <dd>合同会社Corn</dd>
                         </div>
@@ -109,16 +234,18 @@
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="app-section gray app-cta">
+        <!-- 最後の案内 -->
+        <section class="sq-final">
             <div class="container">
-                <h2>英単語を、冒険の力に。</h2>
-                <p class="cta-text">SophicaQuestで、今日から冒険を始めましょう。</p>
-                <a href="https://apps.apple.com/jp/app/id6820406891" target="_blank" rel="noopener">
-                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード" width="250" height="83" style="display:block;margin:24px auto 8px;">
-                </a>
-                <p style="text-align:center;font-size:0.9em;color:#666;">無料・iPhoneのみ対応</p>
-                <div class="legal-links">
+                <h2><span class="sq-line">英単語を、</span><span class="sq-line sq-accent">冒険の力に。</span></h2>
+                <p class="sq-section-lead" style="margin-bottom:0;">SophicaQuestで、今日から冒険を始めましょう。</p>
+                <div class="sq-get">
+                    <a class="sq-badge" href="https://apps.apple.com/jp/app/id6820406891" target="_blank" rel="noopener">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード" width="180" height="60">
+                    </a>
+                </div>
+                <p class="sq-search">無料・iPhone向け。App Storeで「<strong>SophicaQuest</strong>」と検索しても見つかります。</p>
+                <div class="sq-legal">
                     <a href="/sophicaquest-privacy-policy">プライバシーポリシー</a>
                     <span>|</span>
                     <a href="/">運営会社</a>
